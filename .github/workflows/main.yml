@@ -1,0 +1,18 @@
+name: Sample Workflow
+
+on: [push]
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: aman.gour@gramener.com - Print Hello
+        run: echo "Hello from the workflow!"
+      
+      - name: Run tests
+        run: |
+          echo "Running some tests"
+          exit 0
